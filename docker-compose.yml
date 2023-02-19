@@ -1,0 +1,17 @@
+services:
+  php-fpm:
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    container_name: pixel-plus-php
+    volumes:
+      - ./:/app
+    working_dir: /app
+  nginx:
+    image: nginx:1.21.4-alpine
+    volumes:
+      - ./:/app
+      - ./docker/nginx:/etc/nginx/conf.d
+    ports:
+      - 81:80
+    working_dir: /app

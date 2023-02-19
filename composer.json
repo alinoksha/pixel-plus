@@ -1,0 +1,15 @@
+{
+    "name": "pixel-plus/weather-stat",
+    "autoload": {
+        "psr-4": {
+            "PixelPlus\\WeatherStat\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alina",
+            "email": "khizbullina.alina@yandex.ru"
+        }
+    ],
+    "require": {}
+}
